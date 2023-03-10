@@ -1,1 +1,3 @@
-<p>Your text is {{ text }} and it includes {{ wordCount }} words </p>
+{% for post in posts %}
+    <h1><a href="{% url 'post' post %}">Post</a></h1>
+{% endfor %}
